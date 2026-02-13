@@ -1,0 +1,13 @@
+.test-mode-badge {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  padding: 6px 12px;
+  background: rgba(255, 193, 7, 0.9);
+  color: #5d4037;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
