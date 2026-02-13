@@ -135,11 +135,34 @@
 }
 
 @media (max-width: 600px) {
+  .app {
+    justify-content: flex-start;
+    padding-top: 5rem;
+  }
+
   .content {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     padding: 1.5rem;
+    padding-top: 1.5rem;
     max-width: 360px;
+  }
+}
+
+@media (max-width: 400px) {
+  .app .keys-header {
+    top: 12px;
+    right: 12px;
+  }
+
+  .app {
+    padding-top: 5.5rem;
+  }
+
+  .content {
+    padding: 1rem;
+    padding-top: 1rem;
+    gap: 12px;
   }
 }
 
