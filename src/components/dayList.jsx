@@ -12,8 +12,8 @@ const STATUS_CONFIG = {
     accent: "opened",
   },
   locked: {
-    icon: "🔒",
-    label: "Пропущено",
+    icon: "📖",
+    label: "Прочитать",
     accent: "locked",
   },
   future: {

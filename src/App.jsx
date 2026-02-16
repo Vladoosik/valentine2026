@@ -38,15 +38,13 @@ function App() {
 
     const handleOpenDay = (day) => {
         const status = getDayStatus(day.id);
-        if (status === "opened") {
+        if (status === "opened" || status === "locked") {
             setOpenDay(day);
         } else if (status === "available" && keysBalance > 0) {
             const ok = tryOpenDay(day);
             if (ok) setOpenDay(day);
         } else if (status === "available" && keysBalance === 0) {
             setToastReason("no_keys");
-        } else if (status === "locked") {
-            setToastReason("locked");
         } else if (status === "future") {
             setToastReason("future");
         }
