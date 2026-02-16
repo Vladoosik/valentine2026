@@ -27,6 +27,7 @@
   text-align: center;
 }
 
+.keys-link-btn,
 .keys-info-btn {
   width: 40px;
   height: 40px;
@@ -41,14 +42,19 @@
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
   box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
+  text-decoration: none;
+  color: inherit;
 }
 
+.keys-link-btn:hover,
 .keys-info-btn:hover {
   transform: scale(1.08);
   box-shadow: 0 6px 16px rgba(255, 105, 180, 0.25);
   background: rgba(255, 255, 255, 0.7);
 }
 
+.keys-link-btn:active,
 .keys-info-btn:active {
   transform: scale(0.95);
 }
+
